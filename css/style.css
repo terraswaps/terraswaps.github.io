@@ -1,0 +1,119 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.logo_section{
+	margin-top: 4rem;
+}
+h1{
+font-family: 'Roboto', sans-serif;
+}
+/* p{
+	font-family: 'Open Sans', sans-serif;
+} */
+.mens_cloth_heading{
+	
+	color: #ec615b;
+	font-size: 2rem;
+}
+.logo{
+	position: absolute;
+	top: -8%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 10rem;
+	height: 4.5rem;
+}
+.company_logo_box{
+
+	border: 1px solid #fff;
+	position: relative;
+	background-color: #333;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}
+.company_logo_box h1{
+	padding: 3rem 1rem 0 1rem;
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
+}
+.company_logo_box p{
+	
+	padding: 0 1rem 1rem 1rem;
+	font-size: .8rem;
+	color: #fff;
+	text-align: center;
+}
+.line1{
+	position: absolute;
+	top: 7%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 25%;
+	color: #fff;
+	text-align: center;
+	border: .8px dotted #fff;
+}
+/* header section css here */
+.header_nav{
+	margin-top: 3rem;
+}
+.categery_section{
+	margin-top: 5rem;
+}
+.categery_section2{
+	margin-top: 5rem;
+}
+.btn_cart{
+	    padding: 12px 25px;
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    background: #ec615b;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+@media screen and (max-width:800px) {
+	.logo_section{
+	margin-top: 3rem;
+}
+.mens_cloth_heading{
+	font-size: 1.5rem;
+}
+	.logo{
+	top: -8%;
+	left: 50%;
+	width: 9rem;
+	height: 4rem;
+}
+.company_logo_box h1{
+	padding: 3rem 1rem 0 1rem;
+	font-size: 1.2rem;
+}
+.company_logo_box p{
+	padding: 0 1rem 1rem 1rem;
+	font-size: .6rem;
+}
+.line1{
+	width: 45%;
+	
+}
+.header_nav{
+	margin-top: 2rem;
+}
+.categery_section{
+	margin-top: 3rem;
+}
+.categery_section2{
+	margin-top:1rem;
+}
+}
