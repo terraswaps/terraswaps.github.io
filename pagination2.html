@@ -3,159 +3,360 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <!-- Favicon -->
+    <link rel="icon" href="" />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <title>terraswap.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="res/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
 </head>
 
 <body>
-    <div class="main_container">
-        <nav class="main-nav">
-            <ul>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle-category" href="#" data-toggle="dropdown"> All Categories </a>
-                    <ul class="dropdown-menu">
-                        <li class="has-submenu">
-                            <a class="dropdown-item dropdown-toggle-custom" href="{{ route('category.show', $maincategory->slug) }}">
-                                Main Category
-                            </a>
-                            <div class="megasubmenu dropdown-menu">
-                                <div class="row">
-                                    <div class="col-6 my-2 p-2">
-                                        <a href="{{ route('category.show', $subcategory->slug) }}">
-                                            <h6 class="title">Sub Category</h6>
-                                        </a>
-                                        <ul class="list-unstyled">
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6 my-2 p-2">
-                                        <a href="{{ route('category.show', $subcategory->slug) }}">
-                                            <h6 class="title">Sub Category</h6>
-                                        </a>
-                                        <ul class="list-unstyled">
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-                            </div>
-                        </li>
-                        <li class="has-submenu">
-                            <a class="dropdown-item dropdown-toggle-custom" href="{{ route('category.show', $maincategory->slug) }}">
-                                Main Category
-                            </a>
-                            <div class="megasubmenu dropdown-menu">
-                                <div class="row">
-                                    <div class="col-6 my-2 p-2">
-                                        <a href="{{ route('category.show', $subcategory->slug) }}">
-                                            <h6 class="title">Sub Category</h6>
-                                        </a>
-                                        <ul class="list-unstyled">
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-                            </div>
-                        </li>
-                        <li class="has-submenu">
-                            <a class="dropdown-item dropdown-toggle-custom" href="{{ route('category.show', $maincategory->slug) }}">
-                                Main Category
-                            </a>
-                            <div class="megasubmenu dropdown-menu">
-                                <div class="row">
-                                    <div class="col-6 my-2 p-2">
-                                        <a href="{{ route('category.show', $subcategory->slug) }}">
-                                            <h6 class="title">Sub Category</h6>
-                                        </a>
-                                        <ul class="list-unstyled">
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                            <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-                            </div>
-                        </li>
+    <div class="big-screen">
+        <header>
+            <div class="top-header">
+                <div class="top-header__links-wrap">
+                    <ul class="top-header__info">
+                        <li class="font-weight-bold">Customer Care:</li>
                         <li>
-                            <a class="dropdown-item font-weight-bold text-primary" href="{{ route('categories.index') }}">
-                                BROWSE MORE CATEGORIES
+                            ‎
+                            <a href="#" data-toggle="modal" data-target="#exampleModal" class="text-uppercase">
+                                <i class="fas fa-phone-alt"></i> Request Callback
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="nav-item"><a href="{{ url('/') }}" class="nav-link text-uppercase">Home</a></li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="{{ route('category.show', $menu->slug) }}"> Item 1 </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="{{ route('category.show', $menu->slug) }}"> Item 2 </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="{{ route('category.show', $menu->slug) }}"> Item 3 </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- /NAVIGATION -->
-        <!--  company main top box start here -->
-        <section>
-            <div class="container logo_section">
-                <div class="row">
-                    <div class="col-md-10 mx-12 mx-auto">
-                        <div class="row">
-                            <div class="col-md-11 col-12 w-50 mx-auto">
-                                <div class="company_logo_box">
-                                    <img src="images/logo.png" alt="" class="logo img-fluid">
-                                    <hr class="line1" />
-                                    <h1>TERRASWAP VENTURES LLP</h1>
-                                    <p>NO.XVI/141, 1ST FLOOR, RUSHDA COMPLEX PO,CHIRAKKAI, PALLIKULAM, PIN:670011,KANNUR,KERALA,INDIA</p>
+                    <ul class="top-header__links">
+                        <li><a href="{{ route('marketplace.register') }}">BECOME A SELLER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Request a Callback from Us.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button type="button" class="ts-btn">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar">
+            <div class="top-bar__brand">
+                <a href="{{ url('/') }}">
+                    <img src="res/img/app-icons/logo.png" alt="Terraswap" />
+                </a>
+                <!-- <span>BETA</span> -->
+            </div>
+            <div class="top-bar__search-form">
+                <form action="{{ route('search') }}" method="GET" class="search-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Search for products, sellers, brands and more" name="query" />
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="top-bar__action-btns">
+                <div class="tb-ab__item tb-ab__account dropdown">
+                    <i class="fas fa-user" id="accountDropdown" data-toggle="dropdown" data-offset="0,30"></i>
+                    <h6 class="tb_ab-text"><a href="#">Hello, User</a></h6>
+                    <div class="dropdown-menu dropdown-menu-right account-dropdown-menu" aria-labelledby="accountDropdown">
+                        <a class="dropdown-item" href="{{ route('account.dashboard') }}"><i class="fas fa-user fa-fw"></i> My Account</a>
+                        <a class="dropdown-item" href="{{ route('account.orders.index') }}"><i class="fas fa-shopping-cart fa-fw"></i> Orders</a>
+                        <a class="dropdown-item" href="{{ route('account.quotes.index') }}">
+                            <i class="fas fa-file-alt fa-fw"></i> Quotations
+                        </a>
+                        <a class="dropdown-item" href="{{ route('account.dashboard') }}">
+                            <i class="fas fa-heart fa-fw"></i> Shortlists
+                        </a>
+                        <a class="dropdown-item" href="{{ route('seller.dashboard') }}"><i class="fas fa-store"></i> Marketplace</a>
+                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                            <i class="fas fa-sign-out-alt fa-fw"></i> Logout
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">@csrf</form>
+                    </div>
+                </div>
+                <div class="tb-ab__item tb-ab__favs dropdown">
+                    <i class="fas fa-shopping-cart" id="favsDropdown" data-toggle="dropdown" data-offset="0,30"></i>
+                    <h6 class="tb_ab-text">
+                        <a>My Cart</a>
+                    </h6>
+                    <span class="cart-counter">0</span>
+                    <div class="dropdown-menu dropdown-menu-right shortlist-dropdown-menu" aria-labelledby="favsDropdown">
+                        <div class="dropdown-item shortlists-dropdown">
+                            <p class="font-weight-bold text-center w-100 m-0 py-2">
+                                <i class="fas fa-box-open fa-fw"></i>
+                                &nbsp;Your Cart is empty
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tb-ab__post">
+                    <a role="button" href="{{ route('rfq.index') }}" class="ts-btn">Post your Requirement</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-screen">
+        <header>
+            <div class="top-header">
+                <div class="top-header__links-wrap">
+                    <ul class="top-header__info">
+                        <li class="font-weight-bold">Customer Care:</li>
+                        <li>
+                            ‎
+                            <a href="tel:+1800 419 5165"> 1800-419-5165 (toll-free) | </a>
+                        </li>
+                        <li>
+                            <a href="mailto:care@terraswap.com">care@terraswap.com</a>
+                        </li>
+                    </ul>
+                    <ul class="top-header__links">
+                        <li><a href="{{ route('marketplace.register') }}">BECOME A SELLER</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="top-bar">
+            <div class="top-bar__brand">
+                <a href="{{ url('/') }}">
+                    <img src="{{ asset(config('settings.site_logo')) }}" alt="Terraswap" />
+                </a>
+                <!-- <span>BETA</span> -->
+            </div>
+            <div class="top-bar__search-form">
+                <form action="{{ route('search') }}" method="GET" class="search-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Search for products, sellers, brands and more" name="query" value="{{ request()->input('query') }}" />
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+        <ul>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle-category" href="#" data-toggle="dropdown"> All Categories </a>
+                <ul class="dropdown-menu">
+                    <li class="has-submenu">
+                        <a class="dropdown-item dropdown-toggle-custom" href="{{ route('category.show', $maincategory->slug) }}">
+                            Main Category
+                        </a>
+                        <div class="megasubmenu dropdown-menu">
+                            <div class="row">
+                                <div class="col-6 my-2 p-2">
+                                    <a href="{{ route('category.show', $subcategory->slug) }}">
+                                        <h6 class="title">Sub Category</h6>
+                                    </a>
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                    </ul>
                                 </div>
+                                <div class="col-6 my-2 p-2">
+                                    <a href="{{ route('category.show', $subcategory->slug) }}">
+                                        <h6 class="title">Sub Category</h6>
+                                    </a>
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                    </li>
+                    <li class="has-submenu">
+                        <a class="dropdown-item dropdown-toggle-custom" href="{{ route('category.show', $maincategory->slug) }}">
+                            Main Category
+                        </a>
+                        <div class="megasubmenu dropdown-menu">
+                            <div class="row">
+                                <div class="col-6 my-2 p-2">
+                                    <a href="{{ route('category.show', $subcategory->slug) }}">
+                                        <h6 class="title">Sub Category</h6>
+                                    </a>
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                    </li>
+                    <li class="has-submenu">
+                        <a class="dropdown-item dropdown-toggle-custom" href="{{ route('category.show', $maincategory->slug) }}">
+                            Main Category
+                        </a>
+                        <div class="megasubmenu dropdown-menu">
+                            <div class="row">
+                                <div class="col-6 my-2 p-2">
+                                    <a href="{{ route('category.show', $subcategory->slug) }}">
+                                        <h6 class="title">Sub Category</h6>
+                                    </a>
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                        <li><a href="{{ route('category.show', $megacategory->slug) }}">Mega-Menu Category</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                    </li>
+                    <li>
+                        <a class="dropdown-item font-weight-bold text-primary" href="{{ route('categories.index') }}">
+                            BROWSE MORE CATEGORIES
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="{{ url('/') }}" class="nav-link text-uppercase">Home</a></li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="{{ route('category.show', $menu->slug) }}"> Item 1 </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="{{ route('category.show', $menu->slug) }}"> Item 2 </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="{{ route('category.show', $menu->slug) }}"> Item 3 </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /NAVIGATION -->
+    <!--  company main top box start here -->
+    <section>
+        <div class="container logo_section">
+            <div class="row">
+                <div class="col-md-10 mx-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-11 col-12 w-50 mx-auto">
+                            <div class="company_logo_box">
+                                <img src="res/img/app-icons/logo.png" alt="Terraswap" class="logo img-fluid">
+                                <hr class="line1" />
+                                <h1>TERRASWAP VENTURES LLP</h1>
+                                <p>NO.XVI/141, 1ST FLOOR, RUSHDA COMPLEX PO,CHIRAKKAI, PALLIKULAM, PIN:670011,KANNUR,KERALA,INDIA</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- All product categories section start here -->
-        <section>
-            <div class="container-fluid my-5">
-                <div class="row">
-                    <div class="col-lg-10 col-md-10 col-12 mx-auto ">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto">
-                                <div class="all_categary_list">
-                                    <div class="product_categories_heading shadow">
-                                        <h1>Product Categories</h1>
-                                    </div>
+        </div>
+    </section>
+    <!-- Banner section start here -->
+    <section>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-12 mx-auto ">
+                    <img src="res/img/banners/p8.jpg" alt="" class="banner_img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- All product categories section start here -->
+    <section>
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-12 mx-auto ">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-12 mx-auto">
+                            <div class="all_categary_list">
+                                <div class="product_categories_heading shadow">
+                                    <h1>Product Categories</h1>
+                                </div>
+                                <ul class="list-group shadow">
+                                    <li class="list-group-item">
+                                        <div class="dropdown show dropright">
+                                            <a class="dropdown-toggle-custom dropdown_btn_style" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Men's Collections
+                                            </a>
+                                            <div class="dropdown-menu dropdown_sub_menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Men's Socks</a>
+                                                <a class="dropdown-item" href="#">Men's Shirts</a>
+                                                <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
+                                                <a class="dropdown-item" href="#">Men's Hoodies & Sweatshirts</a>
+                                                <a class="dropdown-item" href="#">Men's Coats & Jackets</a>
+                                                <a class="dropdown-item" href="#">Men's Formal Wear</a>
+                                                <a class="dropdown-item" href="#">Men's Sweaters</a>
+                                                <a class="dropdown-item" href="#">Men's Sports Sets</a>
+                                                <a class="dropdown-item" href="#">Men's Vests & Tank Tops</a>
+                                                <a class="dropdown-item" href="#">Men's shoes</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="dropdown show dropright">
+                                            <a class="dropdown-toggle dropdown_btn_style" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Women's Collections
+                                            </a>
+                                            <div class="dropdown-menu dropdown_sub_menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Men's Socks</a>
+                                                <a class="dropdown-item" href="#">Men's Shirts</a>
+                                                <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
+                                                <a class="dropdown-item" href="#">Men's Hoodies & Sweatshirts</a>
+                                                <a class="dropdown-item" href="#">Men's Coats & Jackets</a>
+                                                <a class="dropdown-item" href="#">Men's Formal Wear</a>
+                                                <a class="dropdown-item" href="#">Men's Sweaters</a>
+                                                <a class="dropdown-item" href="#">Men's Sports Sets</a>
+                                                <a class="dropdown-item" href="#">Men's Vests & Tank Tops</a>
+                                                <a class="dropdown-item" href="#">Men's shoes</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="dropdown show dropright">
+                                            <a class="dropdown-toggle dropdown_btn_style" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Childrines Collections
+                                            </a>
+                                            <div class="dropdown-menu dropdown_sub_menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Men's Socks</a>
+                                                <a class="dropdown-item" href="#">Men's Shirts</a>
+                                                <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
+                                                <a class="dropdown-item" href="#">Men's Hoodies & Sweatshirts</a>
+                                                <a class="dropdown-item" href="#">Men's Coats & Jackets</a>
+                                                <a class="dropdown-item" href="#">Men's Formal Wear</a>
+                                                <a class="dropdown-item" href="#">Men's Sweaters</a>
+                                                <a class="dropdown-item" href="#">Men's Sports Sets</a>
+                                                <a class="dropdown-item" href="#">Men's Vests & Tank Tops</a>
+                                                <a class="dropdown-item" href="#">Men's shoes</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">See All Collections</a></li>
+                                </ul>
+                                <div class="second_left_side">
                                     <ul class="list-group shadow">
                                         <li class="list-group-item">
-                                            <div class="dropdown show dropright">
-                                                <a class="dropdown-toggle-custom dropdown_btn_style" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Men's Collections
-                                                </a>
-                                                <div class="dropdown-menu dropdown_sub_menu" aria-labelledby="dropdownMenuLink">
+                                            <div class="myall_ulli">
+                                                <p>Men's Collections ></p>
+                                                <div class="content shadow">
                                                     <a class="dropdown-item" href="#">Men's Socks</a>
                                                     <a class="dropdown-item" href="#">Men's Shirts</a>
                                                     <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
@@ -170,11 +371,9 @@
                                             </div>
                                         </li>
                                         <li class="list-group-item">
-                                            <div class="dropdown show dropright">
-                                                <a class="dropdown-toggle dropdown_btn_style" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Women's Collections
-                                                </a>
-                                                <div class="dropdown-menu dropdown_sub_menu" aria-labelledby="dropdownMenuLink">
+                                            <div class="myall_ulli">
+                                                <p> Women's Collections ></p>
+                                                <div class="content shadow">
                                                     <a class="dropdown-item" href="#">Men's Socks</a>
                                                     <a class="dropdown-item" href="#">Men's Shirts</a>
                                                     <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
@@ -189,11 +388,9 @@
                                             </div>
                                         </li>
                                         <li class="list-group-item">
-                                            <div class="dropdown show dropright">
-                                                <a class="dropdown-toggle dropdown_btn_style" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Childrines Collections
-                                                </a>
-                                                <div class="dropdown-menu dropdown_sub_menu" aria-labelledby="dropdownMenuLink">
+                                            <div class="myall_ulli">
+                                                <p> Childrine's Collections ></p>
+                                                <div class="content shadow">
                                                     <a class="dropdown-item" href="#">Men's Socks</a>
                                                     <a class="dropdown-item" href="#">Men's Shirts</a>
                                                     <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
@@ -208,641 +405,270 @@
                                             </div>
                                         </li>
                                         <li class="list-group-item"><a class="dropdown-item" href="#">See All Collections</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">See All Collections</a></li>
                                     </ul>
-                                    <div class="second_left_side">
-                                        <ul class="list-group shadow">
-                                            <li class="list-group-item">
-                                                <div class="myall_ulli">
-                                                    <p>Men's Collections ></p>
-                                                    <div class="content shadow">
-                                                        <a class="dropdown-item" href="#">Men's Socks</a>
-                                                        <a class="dropdown-item" href="#">Men's Shirts</a>
-                                                        <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
-                                                        <a class="dropdown-item" href="#">Men's Hoodies & Sweatshirts</a>
-                                                        <a class="dropdown-item" href="#">Men's Coats & Jackets</a>
-                                                        <a class="dropdown-item" href="#">Men's Formal Wear</a>
-                                                        <a class="dropdown-item" href="#">Men's Sweaters</a>
-                                                        <a class="dropdown-item" href="#">Men's Sports Sets</a>
-                                                        <a class="dropdown-item" href="#">Men's Vests & Tank Tops</a>
-                                                        <a class="dropdown-item" href="#">Men's shoes</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <div class="myall_ulli">
-                                                    <p> Women's Collections ></p>
-                                                    <div class="content shadow">
-                                                        <a class="dropdown-item" href="#">Men's Socks</a>
-                                                        <a class="dropdown-item" href="#">Men's Shirts</a>
-                                                        <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
-                                                        <a class="dropdown-item" href="#">Men's Hoodies & Sweatshirts</a>
-                                                        <a class="dropdown-item" href="#">Men's Coats & Jackets</a>
-                                                        <a class="dropdown-item" href="#">Men's Formal Wear</a>
-                                                        <a class="dropdown-item" href="#">Men's Sweaters</a>
-                                                        <a class="dropdown-item" href="#">Men's Sports Sets</a>
-                                                        <a class="dropdown-item" href="#">Men's Vests & Tank Tops</a>
-                                                        <a class="dropdown-item" href="#">Men's shoes</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <div class="myall_ulli">
-                                                    <p> Childrine's Collections ></p>
-                                                    <div class="content shadow">
-                                                        <a class="dropdown-item" href="#">Men's Socks</a>
-                                                        <a class="dropdown-item" href="#">Men's Shirts</a>
-                                                        <a class="dropdown-item" href="#">Men's Pants & Shorts</a>
-                                                        <a class="dropdown-item" href="#">Men's Hoodies & Sweatshirts</a>
-                                                        <a class="dropdown-item" href="#">Men's Coats & Jackets</a>
-                                                        <a class="dropdown-item" href="#">Men's Formal Wear</a>
-                                                        <a class="dropdown-item" href="#">Men's Sweaters</a>
-                                                        <a class="dropdown-item" href="#">Men's Sports Sets</a>
-                                                        <a class="dropdown-item" href="#">Men's Vests & Tank Tops</a>
-                                                        <a class="dropdown-item" href="#">Men's shoes</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item"><a class="dropdown-item" href="#">See All Collections</a></li>
-                                            <li class="list-group-item"><a class="dropdown-item" href="#">See All Collections</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-8 col-sm-8 col-12 mx-auto navbar_top_margin">
-                                <div class="allproduct_nav">
-                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All Products</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Customization</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">CReady to Ship</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                            <div class="all_product_collections">
-                                                <div class="box2 ">
-                                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                                    <h1>Men's clothes</h1>
-                                                    <h2>$30 /picec</h2>
-                                                    <p>fashion pleated pants mesh top matching sets</p>
-                                                    <a href="#" class="btn btn_cart2">Add To Cart</a>
-                                                </div>
-                                                <div class="box2">
-                                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                                    <h1>Women's clothes</h1>
-                                                    <h2>$50 /picec</h2>
-                                                    <p>fashion pleated pants mesh top matching sets</p>
-                                                    <a href="#" class="btn btn_cart2">Add To Cart</a>
-                                                </div>
-                                                <div class="box2">
-                                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                                    <h1>Men's clothes</h1>
-                                                    <h2>$50 /picec</h2>
-                                                    <p>fashion pleated pants mesh top matching sets</p>
-                                                    <a href="#" class="btn btn_cart2">Add To Cart</a>
-                                                </div>
-                                                <div class="box2">
-                                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                                    <h1>Women's clothes</h1>
-                                                    <h2>$50 /picec</h2>
-                                                    <p>fashion pleated pants mesh top matching sets</p>
-                                                    <a href="#" class="btn btn_cart2">Add To Cart</a>
-                                                </div>
-                                                <div class="box2">
-                                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                                    <h1>Children's clothes</h1>
-                                                    <h2>$50 /picec</h2>
-                                                    <p>fashion pleated pants mesh top matching sets</p>
-                                                    <a href="#" class="btn btn_cart2">Add To Cart</a>
-                                                </div>
-                                                <div class="box2">
-                                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                                    <h1>Men's clothes</h1>
-                                                    <h2>$50 /picec</h2>
-                                                    <p>fashion pleated pants mesh top matching sets</p>
-                                                    <a href="#" class="btn btn_cart2">Add To Cart</a>
-                                                </div>
-                                                <div class="box2">
-                                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                                    <h1>children's clothes</h1>
-                                                    <h2>$50 /picec</h2>
-                                                    <p>fashion pleated pants mesh top matching sets</p>
-                                                    <a href="#" class="btn btn_cart2">Add To Cart</a>
-                                                </div>
-                                                <div class="box2">
-                                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                                    <h1>Men's clothes</h1>
-                                                    <h2>$50 /picec</h2>
-                                                    <p>fashion pleated pants mesh top matching sets</p>
-                                                    <a href="#" class="btn btn_cart2">Add To Cart</a>
-                                                </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-8 col-12 mx-auto navbar_top_margin">
+                            <div class="allproduct_nav">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All Products</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Customization</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">CReady to Ship</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="all_product_collections">
+                                            <div class="box2 ">
+                                                <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+                                                <h1>Men's clothes</h1>
+                                                <h2>$30 /picec</h2>
+                                                <p>fashion pleated pants mesh top matching sets</p>
+                                                <a href="#" class="btn btn_cart2">Add To Cart</a>
                                             </div>
-                                            <!--  <section>
-                                                <div class="container-fluid categery_section2">
-                                                    <div class="row">
-                                                        <div class="col-12 mx-auto">
-                                                            <div class="row text-center mb-5">
-                                                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 card">
-                                                                   
-                                                                        <img class="card-img-top img-fluid " src="images/p1.png" alt="Card image cap">
-                                                                        <div class="card-body">
-                                                                            <h5 class="card-title">Mens clothes</h5>
-                                                                            <h6 class="card-price">$60 /picec</h6>
-                                                                            <p class="card-text">
-                                                                                fashion pleated pants mesh top matching sets </p>
-                                                                            <a href="#" class="btn btn_cart">Add To Cart</a>
-                                                                        </div>
-                                                                   
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 card">
-                                                                   
-                                                                        <img class="card-img-top img-fluid " src="images/p1.png" alt="Card image cap">
-                                                                        <div class="card-body">
-                                                                            <h5 class="card-title">Mens clothes</h5>
-                                                                            <h6 class="card-price">$60 /picec</h6>
-                                                                            <p class="card-text">
-                                                                                fashion pleated pants mesh top matching sets </p>
-                                                                            <a href="#" class="btn btn_cart">Add To Cart</a>
-                                                                        </div>
-                                                                  
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 card">
-                                                                   
-                                                                        <img class="card-img-top img-fluid " src="images/p1.png" alt="Card image cap">
-                                                                        <div class="card-body">
-                                                                            <h5 class="card-title">Mens clothes</h5>
-                                                                            <h6 class="card-price">$60 /picec</h6>
-                                                                            <p class="card-text">
-                                                                                fashion pleated pants mesh top matching sets </p>
-                                                                            <a href="#" class="btn btn_cart">Add To Cart</a>
-                                                                        </div>
-                                                                 
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 card">
-                                                                   
-                                                                        <img class="card-img-top img-fluid " src="images/p1.png" alt="Card image cap">
-                                                                        <div class="card-body">
-                                                                            <h5 class="card-title">Mens clothes</h5>
-                                                                            <h6 class="card-price">$60 /picec</h6>
-                                                                            <p class="card-text">
-                                                                                fashion pleated pants mesh top matching sets </p>
-                                                                            <a href="#" class="btn btn_cart">Add To Cart</a>
-                                                                        </div>
-                                                                   
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 card">
-                                                                    
-                                                                        <img class="card-img-top img-fluid " src="images/p1.png" alt="Card image cap">
-                                                                        <div class="card-body">
-                                                                            <h5 class="card-title">Mens clothes</h5>
-                                                                            <h6 class="card-price">$60 /picec</h6>
-                                                                            <p class="card-text">
-                                                                                fashion pleated pants mesh top matching sets </p>
-                                                                            <a href="#" class="btn btn_cart">Add To Cart</a>
-                                                                        </div>
-                                                                 
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 card">
-                                                                   
-                                                                        <img class="card-img-top img-fluid " src="images/p1.png" alt="Card image cap">
-                                                                        <div class="card-body">
-                                                                            <h5 class="card-title">Mens clothes</h5>
-                                                                            <h6 class="card-price">$60 /picec</h6>
-                                                                            <p class="card-text">
-                                                                                fashion pleated pants mesh top matching sets </p>
-                                                                            <a href="#" class="btn btn_cart">Add To Cart</a>
-                                                                        </div>
-                                                                  
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section> -->
+                                            <div class="box2">
+                                                <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+                                                <h1>Women's clothes</h1>
+                                                <h2>$50 /picec</h2>
+                                                <p>fashion pleated pants mesh top matching sets</p>
+                                                <a href="#" class="btn btn_cart2">Add To Cart</a>
+                                            </div>
+                                            <div class="box2">
+                                                <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+                                                <h1>Men's clothes</h1>
+                                                <h2>$50 /picec</h2>
+                                                <p>fashion pleated pants mesh top matching sets</p>
+                                                <a href="#" class="btn btn_cart2">Add To Cart</a>
+                                            </div>
+                                            <div class="box2">
+                                                <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+                                                <h1>Women's clothes</h1>
+                                                <h2>$50 /picec</h2>
+                                                <p>fashion pleated pants mesh top matching sets</p>
+                                                <a href="#" class="btn btn_cart2">Add To Cart</a>
+                                            </div>
+                                            <div class="box2">
+                                                <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+                                                <h1>Children's clothes</h1>
+                                                <h2>$50 /picec</h2>
+                                                <p>fashion pleated pants mesh top matching sets</p>
+                                                <a href="#" class="btn btn_cart2">Add To Cart</a>
+                                            </div>
+                                            <div class="box2">
+                                                <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+                                                <h1>Men's clothes</h1>
+                                                <h2>$50 /picec</h2>
+                                                <p>fashion pleated pants mesh top matching sets</p>
+                                                <a href="#" class="btn btn_cart2">Add To Cart</a>
+                                            </div>
                                         </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Customization page come here</div>
-                                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Ready to Ship page will come here</div>
                                     </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Customization page come here</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Ready to Ship page will come here</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--  mens collection start here -->
-        <div class="heading_children_collection">
-            <h1>Men's collections</h1>
         </div>
-        <div class="mens_collections">
-            <div class="box1 ">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Men's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Men's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Men's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Men's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Men's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Men's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Men's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Men's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
+    </section>
+    <!--  mens collection start here -->
+    <div class="heading_children_collection">
+        <h1>Men's collections</h1>
+    </div>
+    <div class="mens_collections">
+        <div class="box1 ">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Men's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
         </div>
-        <!--  <section>
-            <div class="container-fluid categery_section2">
-                <h1 class="text-center mens_cloth_heading text-capitalize font-width pt-3">
-                    women's clothes
-                </h1>
-                <hr class="w-25 mx-auto" />
-                <div class="row">
-                    <div class="col-lg-10 col-md-10 mx-auto col-12">
-                        <div class="row text-center mb-5">
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Women's clothes</h5>
-                                        <h6 class="card-price">$60 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Women's clothes</h5>
-                                        <h6 class="card-price">$60 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Women's clothes</h5>
-                                        <h6 class="card-price">$60 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Women's clothes</h5>
-                                        <h6 class="card-price">$60 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Women's clothes</h5>
-                                        <h6 class="card-price">$60 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Women's clothes</h5>
-                                        <h6 class="card-price">$60 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Women's clothes</h5>
-                                        <h6 class="card-price">$60 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Mens clothes</h5>
-                                        <h6 class="card-price">$60 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--  mens collection end here -->
-        <!--   women collections start here -->
-        <div class="heading_children_collection">
-            <h1>Women's collections</h1>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Men's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
         </div>
-        <div class="mens_collections">
-            <div class="box1 ">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Women's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Women's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Women's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Women's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Women's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Women's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Women's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>Women's clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Men's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
         </div>
-        <!--  <section>
-            <div class="container-fluid categery_section2">
-                <h1 class="text-center mens_cloth_heading text-capitalize font-width pt-3">
-                    Men's clothes
-                </h1>
-                <hr class="w-25 mx-auto" />
-                <div class="row">
-                    <div class="col-lg-10 col-md-10 mx-auto col-12">
-                        <div class="row text-center mb-5">
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Men's clothes</h5>
-                                        <h6 class="card-price">$70 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                       <h5 class="card-title">Men's clothes</h5>
-                                        <h6 class="card-price">$70 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                         <h5 class="card-title">Men's clothes</h5>
-                                        <h6 class="card-price">$70 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                         <h5 class="card-title">Men's clothes</h5>
-                                        <h6 class="card-price">$70 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                         <h5 class="card-title">Men's clothes</h5>
-                                        <h6 class="card-price">$70 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Men's clothes</h5>
-                                        <h6 class="card-price">$70 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Men's clothes</h5>
-                                        <h6 class="card-price">$70 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Men's clothes</h5>
-                                        <h6 class="card-price">$70 /picec</h6>
-                                        <p class="card-text">
-                                            fashion pleated pants mesh top matching sets </p>
-                                        <a href="#" class="btn btn_cart">Add To Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--   women collections end here -->
-        <!-- without bootstrap childrens box collection start here -->
-        <div class="heading_children_collection">
-            <h1>Children's collections</h1>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Men's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
         </div>
-        <div class="mens_collections">
-            <div class="box1 ">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>childrens clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>childrens clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>childrens clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>childrens clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>childrens clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>childrens clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>childrens clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
-            <div class="box1">
-                <img class="card-img-top img-fluid " src="images/p2.png" alt="Card image cap">
-                <h1>childrens clothes</h1>
-                <h2>$50 /picec</h2>
-                <p>fashion pleated pants mesh top matching sets</p>
-                <a href="#" class="btn btn_cart1">Add To Cart</a>
-            </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Men's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
         </div>
-        <!--    pagination start here -->
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Men's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Men's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Men's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+    </div>
+    <!--  mens collection end here -->
+    <!--   women collections start here -->
+    <div class="heading_children_collection">
+        <h1>Women's collections</h1>
+    </div>
+    <div class="mens_collections">
+        <div class="box1 ">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Women's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Women's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Women's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Women's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Women's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Women's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Women's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>Women's clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+    </div>
+    <!--   women collections end here -->
+    <!-- without bootstrap childrens box collection start here -->
+    <div class="heading_children_collection">
+        <h1>Children's collections</h1>
+    </div>
+    <div class="mens_collections">
+        <div class="box1 ">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>childrens clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>childrens clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>childrens clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>childrens clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>childrens clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>childrens clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>childrens clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+        <div class="box1">
+            <img class="card-img-top img-fluid " src="res/img/products/p2.png" alt="Card image cap">
+            <h1>childrens clothes</h1>
+            <h2>$50 /picec</h2>
+            <p>fashion pleated pants mesh top matching sets</p>
+            <a href="#" class="btn btn_cart1">Add To Cart</a>
+        </div>
+    </div>
+      <!--    pagination start here -->
          <nav class="pagination_bottom">
          <ul class="pagination justify-content-center mb-5">
             <li class="page-item" title="previous" >
@@ -861,10 +687,184 @@
          </ul>
      </nav>
         <!-- pagination end here -->
+    <!--  <section class="all-categories">
+      <div class="all-categories_wrap">
+        <div class="single-category">
+          <div class="single-category_main-header">
+            <h6>Main Category</h6>
+            <div class="header-seperator"></div>
+          </div>
+          <div class="main-category">
+            <div class="sub-category">
+              <a href="{{ route('category.show', $subcategory->slug) }}">
+                <h6>Some Category</h6>
+              </a>
+              <ul>
+                <li>
+                  <a href="category.html"> Category Name </a>
+                </li>
+              </ul>
+            </div>
+            <div class="sub-category">
+              <a href="{{ route('category.show', $subcategory->slug) }}">
+                <h6>Some Category</h6>
+              </a>
+              <ul>
+                <li>
+                  <a href="category.html"> Category Name </a>
+                </li>
+                <li>
+                  <a href="category.html"> Category Name </a>
+                </li>
+                <li>
+                  <a href="category.html"> Category Name </a>
+                </li>
+              </ul>
+            </div>
+            <div class="sub-category">
+              <a href="{{ route('category.show', $subcategory->slug) }}">
+                <h6>Some Category</h6>
+              </a>
+              <ul>
+                <li>
+                  <a href="category.html"> Category Name </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <footer>
+        <div class="footer-icons">
+            <div class="footer-icon">
+                <i class="fas fa-truck-moving text-primary"></i>
+                <h6 class="font-weight-bold">Nationwide Delivery</h6>
+                <p>Fast shipping to anywhere in India.</p>
+            </div>
+            <div class="footer-icon">
+                <i class="fas fa-user-check text-primary"></i>
+                <h6 class="font-weight-bold">Verified Sellers</h6>
+                <p>Effecient onboarding with strict verification of sellers.</p>
+            </div>
+            <div class="footer-icon">
+                <i class="fas fa-user-shield text-primary"></i>
+                <h6 class="font-weight-bold">Buyer Protection</h6>
+                <p>Assured product quality & Insured product on purchase.</p>
+            </div>
+            <div class="footer-icon">
+                <i class="fas fa-headset text-primary"></i>
+                <h6 class="font-weight-bold">365 Days Support</h6>
+                <p>Call toll-free number 1800-419-5165 for any queries.</p>
+            </div>
+        </div>
+        <div class="footer-mains">
+            <div class="main-img">
+                <img src="res/img/layout/made_in_india.png" alt="made-in-india" />
+            </div>
+            <div class="main-links">
+                <h6 class="font-weight-bold text-primary text-center">Useful Links</h6>
+                <ul>
+                    <li>
+                        <a href="{{ route('marketplace.register') }}">Seller Registration</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('categories.index') }}">All Categories</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="{{ route('tnc') }}">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('privacy-policy') }}">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('wholesale-refund-policy') }}">Delivery & Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="app-img">
+                <h6 class="font-weight-bold text-primary text-center">Coming soon on</h6>
+                <img src="res/img/layout/download.png" alt="coming-soon" />
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2021, Terraswap Ventures LLP.</p>
+        </div>
+    </footer>
+    <div class="mobile-nav-ux">
+        <div class="top-bar__action-btns">
+            <div class="tb-ab__item tb-ab__home">
+                <a href="{{ route('landingpage') }}">
+                    <i class="fas fa-home"></i>
+                    <h6 class="tb_ab-text">Home</h6>
+                </a>
+            </div>
+            <div class="tb-ab__item tb-ab__account dropdown">
+                <i class="fas fa-user" id="accountDropdown" data-toggle="dropdown" data-offset="0,30"></i>
+                <h6 class="tb_ab-text"><a href="#">Hello, User</a></h6>
+                <div class="dropdown-menu dropdown-menu-right account-dropdown-menu" aria-labelledby="accountDropdown">
+                    <a class="dropdown-item" href="{{ route('account.dashboard') }}"><i class="fas fa-user fa-fw"></i> My Account</a>
+                    <a class="dropdown-item" href="{{ route('account.orders.index') }}"><i class="fas fa-shopping-cart fa-fw"></i> Orders</a>
+                    <a class="dropdown-item" href="{{ route('account.quotes.index') }}">
+                        <i class="fas fa-file-alt fa-fw"></i> Quotations
+                    </a>
+                    <a class="dropdown-item" href="{{ route('account.dashboard') }}">
+                        <i class="fas fa-heart fa-fw"></i> Shortlists
+                    </a>
+                    <a class="dropdown-item" href="{{ route('seller.dashboard') }}"><i class="fas fa-store"></i> Marketplace</a>
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                        <i class="fas fa-sign-out-alt fa-fw"></i> Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none"></form>
+                </div>
+            </div>
+            <div class="tb-ab__item tb-ab__favs dropdown">
+                <i class="fas fa-shopping-cart" id="favsDropdown" data-toggle="dropdown" data-offset="0,30"></i>
+                <h6 class="tb_ab-text">
+                    <a>My Cart</a>
+                </h6>
+                <span class="cart-counter">{{ $cartCount }}</span>
+                <div class="dropdown-menu dropdown-menu-right shortlist-dropdown-menu" aria-labelledby="favsDropdown">
+                    @if (\Cart::isEmpty())
+                    <div class="dropdown-item shortlists-dropdown">
+                        <p class="font-weight-bold text-center w-100 m-0 py-2">
+                            <i class="fas fa-box-open fa-fw"></i>
+                            &nbsp;Your Cart is empty
+                        </p>
+                    </div>
+                    @else @foreach (\Cart::getContent() as $item) @php $product =
+                    App\Models\SellerProduct::findOrFail($item->product_id); @endphp
+                    <div class="dropdown-item shortlists-dropdown">
+                        <a class="font-weight-bold w-100">
+                            @if (count($product->images) > 0)
+                            <img src="{{ asset($product->images()->first()->full) }}" alt="" />
+                            @else <img src="{{ asset("products/no_image.png") }}" alt="no image to display" /> @endif {{ $item->name
+                            }}
+                        </a>
+                    </div>
+                    @endforeach
+                    <a href="{{ route('quote.request') }}" role="button" class="m-2 ts-btn float-right">
+                        Request Quote&nbsp;<i class="fas fa-chevron-right fa-fw"></i>
+                    </a>
+                    @endif
+                </div>
+            </div>
+            <div class="tb-ab__item tb-ab__home">
+                <a href="{{ route('categories.index') }}">
+                    <i class="fas fa-th-list"></i>
+                    <h6 class="tb_ab-text">All Categories</h6>
+                </a>
+            </div>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="res/js/layout.js"></script>
 </body>
 
 </html>
